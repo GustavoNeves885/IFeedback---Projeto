@@ -332,3 +332,82 @@ footer {
 .btn-login:hover {
     background-color: #145a01;
 }
+
+
+
+
+.card-minhas-rec {
+    background: #D8F3D2;
+    padding: 50px;
+    border-radius: 15px;
+    width: 90%;
+    max-width: 900px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    display: flex;
+    flex-direction: column;
+    gap: 30px; 
+}
+
+
+.item-ocorrencia {
+    background-color: #fff;
+    border: 2px solid #2F7D31; 
+    border-radius: 8px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    flex-wrap: wrap; 
+    gap: 15px;
+}
+
+.texto-ocorrencia {
+    font-size: 18px;
+    font-weight: bold;
+    color: #2F7D31;
+    flex: 1; 
+}
+
+
+.dados-direita {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+
+.badge {
+    padding: 5px 20px;
+    border-radius: 20px; 
+    font-weight: bold;
+    font-size: 16px;
+    border: 2px solid;
+    text-transform: capitalize;
+}
+
+
+.status-resolvido {
+    border-color: #2ecc71;
+    color: #2ecc71;
+}
+
+.status-andamento {
+    border-color: #f39c12;
+    color: #f39c12;
+}
+
+.data-ocorrencia {
+    font-weight: bold;
+    color: #2F7D31;
+    font-size: 18px;
+}
+
+
+.area-botao-direita {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+
+
+.btn-voltar
