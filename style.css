@@ -1,136 +1,161 @@
-h1 {
-  font-family:'Courier New', Courier, monospace;
-  color: #005713;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body {
+    margin: 0;
     font-family: Arial;
-    background-color:#f4f4f4;
-    
 }
 
-.barra {
-    background-color: #9BDD87;
-    height: 60px;
-    width: 100%;
-}
-
-.barra-baixo{
-    background-color: #9BDD87;
-    height: 20px;
-    width: 100%;
-}
-
-main {
-    text-align: center;
-    padding: 20px 20px 40px 20px;
-}
-
-main h1 {
-    margin-top: -5px;
-    margin-bottom: 30px;
-    color:#2C892F;
-    font-family: Arial;
-
-}
-
-.botoes button {
-    display: block;
-    width: 200px;
-    margin: 10px auto;
-    padding: 12px;
-    border: none;
-    background-color: #1C7801;
-    color: white;
-    font-size: 16px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: 0.2s;
-    display: flexbox;
-}
-
-.botoes button:hover {
-    background-color: #123b18;
-}
-
-.caixa-verde{
-    background-color: #D5EDCE ;
-    width: 80%;
-    margin: 40px auto;
-    padding: 30px;
-    border-radius: 10px;
-    text-align: center;
-}
-.botãoMinhasOcorrencias{
+html, body {
+    height: 100%;
     display: flex;
-
+    flex-direction: column;
 }
-
-
-/* ESTILOS ESPECÍFICOS DA SESSÃO "SOBRE"  - Gustavo          */
 
 header {
-    background-color: #9BDD87; 
-    padding: 15px 40px;
+    background: #8BCF7A;
+    padding: 15px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    justify-content: space-between;
 }
 
-.logo strong {
-    color: #1b5e20;
-    font-size: 16px;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-    gap: 15px;
+.logo {
+    background: #63A966;
+    padding: 8px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    color: #fff;
+    border: none;
 }
 
 nav a {
-    text-decoration: none;
-    color: #000;
-    font-weight: bold;
-    padding: 8px 15px;
+    background: #CEFBC0;
+    padding: 10px 40px;
     border-radius: 5px;
-    transition: background 0.3s;
+    margin-left: 15px;
+    margin-right: 30px;
+    text-decoration: none;
+    color: #2F7D31;
+    font-weight: bold;
 }
 
-nav a:hover {
-    background-color: rgba(255, 255, 255, 0.3);
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 0;
+    gap: 80px;
 }
 
-.titulo-sobre {
-    color: #2e7d32 !important; 
-    font-family: Arial, sans-serif !important;
-    font-size: 40px;
-    margin-bottom: 20px;
-    margin-top: 20px;
-    display: block; 
+.left-boxes {
+    display: flex;
+    gap: 80px;
+}
+
+.box {
+    color: #0c751b;
+    display: flex;
+    align-items: center;
+    border: 1px solid;
+    padding: 25px;
+    width: 200px;
+    border-radius: 4%;
+    font-weight: bold;
+    gap: 30px;
+}
+
+.microfone {
+    width: 60px;
+}
+
+.total {
+    text-align: center;
+    color: #0c751b;
+}
+
+.total p {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.total h1 {
+    font-size: 130px;
+    margin: 0;
 }
 
 
-.card-conteudo {
-    background-color: #dcedc8; 
+.titulo h1 {
+    color: #0c751b;
+    text-align: center;
+}
+
+.cardcts {
+    background: #D8F3D2;
+    width: 90%;
+    max-width: 1200px;
+    margin: 30px auto;
     padding: 40px;
-    max-width: 800px;
-    margin: 0 auto; 
     border-radius: 10px;
-    font-size: 18px;
-    color: #1b5e20;
-    line-height: 1.5;
 }
 
-.card-conteudo p {
-    margin-bottom: 25px;
+.label {
+    display: block;
+    color: #0c751b;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+form input, textarea {
+    width: 100%;
+}
+
+.button {
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+footer {
+    background: #8BCF7A;
+    height: 40px;
+    margin-top: auto;
+}
+
+.logoif {
+    width: 120px;
+    margin-top: 5px;
+}
+
+/*  ADIÇÕES DO GUSTAVO (Página Sobre) */
+
+
+.main-sobre {
+    display: block;       
+    text-align: center;
+    padding: 40px 20px;
+    height: auto;         
+}
+
+
+.card-sobre {
+    background: #D8F3D2;  
+    max-width: 800px;
+    margin: 0 auto;       
+    padding: 40px;
+    border-radius: 10px;
+    text-align: left;     
+    line-height: 1.6;
+    font-size: 18px;
+    color: #0c751b;       
+}
+
+.titulo-sobre h1 {
+    color: #0c751b;
+    margin-bottom: 30px;
+}
+
+.titulo-sobre h1 {
+    color: #0c751b;
+    margin-bottom: 30px;
 }
 
 .btn-voltar {
@@ -141,15 +166,10 @@ nav a:hover {
     text-decoration: none;
     border-radius: 5px;
     font-weight: bold;
-    margin-top: 10px;
+    border: none;
+    cursor: pointer;
 }
 
 .btn-voltar:hover {
     background-color: #123b18;
-}
-
-footer {
-    height: 40px;
-    background-color: #9BDD87;
-    margin-top: auto;
 }
