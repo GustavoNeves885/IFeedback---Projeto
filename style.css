@@ -9,7 +9,6 @@ html, body {
     flex-direction: column;
 }
 
-/* Cabeça*/
 header {
     background: #8BCF7A;
     padding: 15px;
@@ -17,7 +16,7 @@ header {
     align-items: center;
     justify-content: space-between;
 }
-/*formatacao da logo "IFeedback"*/
+
 .logo {
     background: #63A966;
     padding: 8px 20px;
@@ -26,7 +25,7 @@ header {
     color: #fff;
     border: none;
 }
-/* configuracao das botoes menu*/
+
 nav a {
     background: #CEFBC0;
     padding: 10px 40px;
@@ -37,7 +36,7 @@ nav a {
     color: #2F7D31;
     font-weight: bold;
 }
-/*Miolo da pagina home */
+
 main {
     flex: 1;
     display: flex;
@@ -46,12 +45,12 @@ main {
     padding: 80px 0;
     gap: 80px;
 }
-/* Div mãe dos botoes "Faça uma ocorrencia"e" minhas ocorencias"*/
+
 .left-boxes {
     display: flex;
     gap: 80px;
 }
-/*formatacao das dos botoes "Faça uma ocorrencia"e" minhas ocorencias"*/
+
 .box {
     color: #0c751b;
     display: flex;
@@ -63,32 +62,32 @@ main {
     font-weight: bold;
     gap: 30px;
 }
-/* Tamanho da imagem do microfone*/
+
 .microfone {
     width: 60px;
 }
-/*Formatacao da DIV do total de ocorrencia+numero*/
+
 .total {
     text-align: center;
     color: #0c751b;
 }
-/*Formatacao da frase "total de ocorrencia atendidas, pagina home"*/
+
 .total p {
     font-size: 30px;
     font-weight: bold;
 }
-/* Tamanho dos numero 532, pagina home*/
+
 .total h1 {
     font-size: 130px;
     margin: 0;
 }
 
-/* Titulo"Faça seu comtario" na pagina cometarios */
+
 .titulo h1 {
     color: #0c751b;
     text-align: center;
 }
-/* Formatacao do Card das paginas comentarios*/
+
 .cardcts {
     background: #D8F3D2;
     width: 90%;
@@ -97,31 +96,341 @@ main {
     padding: 40px;
     border-radius: 10px;
 }
-/*Formatacao dos titulos do FORM, pagina comentarios*/
+
 .label {
     display: block;
     color: #0c751b;
     font-weight: bold;
     margin-top: 15px;
 }
-/*Tamanho horizontal das areas de input*/
+
 form input, textarea {
     width: 100%;
 }
-/*Formatacao do botao "Enviar", pagina comentarios*/
+
 .button {
     display: flex;
     justify-content: flex-end;
 }
 
-/* formatacao rodape, pagina home e comentarios*/
+
 footer {
     background: #8BCF7A;
     height: 40px;
     margin-top: auto;
 }
-/* formatacao da logo do IF*/
+
 .logoif {
     width: 120px;
     margin-top: 5px;
+}
+
+/*  ADIÇÕES DO GUSTAVO (Página Sobre) */
+
+
+.main-sobre {
+    display: block;       
+    text-align: center;
+    padding: 40px 20px;
+    height: auto;         
+}
+
+
+.card-sobre {
+    background: #D8F3D2;  
+    max-width: 800px;
+    margin: 0 auto;       
+    padding: 40px;
+    border-radius: 10px;
+    text-align: left;     
+    line-height: 1.6;
+    font-size: 18px;
+    color: #0c751b;       
+}
+
+.titulo-sobre h1 {
+    color: #0c751b;
+    margin-bottom: 30px;
+}
+
+.titulo-sobre h1 {
+    color: #0c751b;
+    margin-bottom: 30px;
+}
+
+.btn-voltar {
+    display: inline-block;
+    background-color: #1C7801;
+    color: white;
+    padding: 12px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-voltar:hover {
+    background-color: #123b18;
+}
+
+/* ESTILOS DA PÁGINA DE CADASTRO */
+
+
+.container-cadastro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.titulo-pagina {
+    color: #0c751b;
+    font-size: 36px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+
+.card-cadastro {
+    background: #D8F3D2; 
+    padding: 50px;
+    border-radius: 15px;
+    width: 90%;
+    max-width: 900px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+
+.form-layout {
+    display: flex;
+    gap: 50px; 
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.coluna-inputs {
+    flex: 1.5; 
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+.input-verde {
+    padding: 15px;
+    border: 2px solid #7BC074; 
+    border-radius: 8px;
+    font-size: 16px;
+    color: #555;
+    background-color: #fff;
+    outline: none;
+    font-weight: bold;
+}
+
+.input-verde::placeholder {
+    color: #aaa;
+    font-weight: bold;
+}
+
+.input-verde:focus {
+    border-color: #2F7D31;
+}
+
+
+.coluna-acao {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.btn-cadastrar {
+    background-color: #1C7801; 
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    border: none;
+    padding: 25px 40px; 
+    border-radius: 8px;
+    cursor: pointer;
+    width: 100%; 
+    max-width: 250px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+    transition: transform 0.1s;
+}
+
+.btn-cadastrar:active {
+    transform: scale(0.98);
+}
+
+.link-login {
+    color: #1C7801;
+    font-weight: bold;
+    text-decoration: underline;
+    font-size: 16px;
+}
+
+.link-login:hover {
+    color: #0a4400;
+}
+
+@media (max-width: 768px) {
+    .form-layout {
+        flex-direction: column;
+    }
+    
+    .coluna-inputs {
+        width: 100%;
+    }
+
+    .btn-cadastrar {
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+
+
+.card-login {
+    background: #D8F3D2; 
+    padding: 60px 40px;  
+    border-radius: 10px;
+    width: 90%;
+    max-width: 450px;   
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-login {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 25px; 
+}
+
+
+.btn-login {
+    background-color: #1C7801;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    padding: 15px 50px; 
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;  
+    align-self: center;
+    transition: background 0.2s;
+}
+
+.btn-login:hover {
+    background-color: #145a01;
+}
+
+.card-minhas-rec {
+    background: #D8F3D2;
+    padding: 50px;
+    border-radius: 15px;
+    width: 90%;
+    max-width: 900px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    display: flex;
+    flex-direction: column;
+    gap: 30px; 
+}
+
+
+.item-ocorrencia {
+    background-color: #fff;
+    border: 2px solid #2F7D31; 
+    border-radius: 8px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    flex-wrap: wrap; 
+    gap: 15px;
+}
+
+.texto-ocorrencia {
+    font-size: 18px;
+    font-weight: bold;
+    color: #2F7D31;
+    flex: 1; 
+
+
+.dados-direita {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+
+.badge {
+    padding: 5px 20px;
+    border-radius: 20px; 
+    font-weight: bold;
+    font-size: 16px;
+    border: 2px solid;
+    text-transform: capitalize;
+}
+
+
+.status-resolvido {
+    border-color: #2ecc71;
+    color: #2ecc71;
+}
+
+.status-andamento {
+    border-color: #f39c12;
+    color: #f39c12;
+}
+
+.data-ocorrencia {
+    font-weight: bold;
+    color: #2F7D31;
+    font-size: 18px;
+}
+
+
+.area-botao-direita {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+
+
+.btn-voltar-inicio {
+    background-color: #1C7801;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 5px;
+    transition: background 0.2s;
+}
+
+.btn-voltar-inicio:hover {
+    background-color: #145a01;
+}
+
+
+@media (max-width: 768px) {
+    .item-ocorrencia {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .dados-direita {
+        width: 100%;
+        justify-content: space-between;
+        margin-top: 10px;
+    }
 }
